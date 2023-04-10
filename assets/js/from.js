@@ -40,7 +40,6 @@ function submit() {
     if(checkmail == "" ) { 
         alert("Email cannot be left blank");
         check3= false;
-
     } else if(checkmail > 0 || checkmail < 0 ) { 
         alert("Email must be character");
         check3= false;
@@ -66,6 +65,9 @@ function submit() {
     
     if(checkage == "" ) { 
         alert("age number information cannot be left blank");
+        check6 = false;
+    } else if(checkage < 0 || checkage > 120) {
+        alert("age number must be between 0 and 120");
         check6 = false;
     } else {
         check6 = true;
