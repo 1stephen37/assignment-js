@@ -42,21 +42,21 @@ function back() {
   }  
 }
 
-var show = document.querySelectorAll(".content-1 .box-5 .box .show ");
-var img = document.querySelectorAll(".content-1 .box-5 .box img ");
-for(var index in img) {
-  img[index].addEventListener("hover",sub_show(index))
-}
+// var show = document.querySelectorAll(".content-1 .box-5 .box .show ");
+// var img = document.querySelectorAll(".content-1 .box-5 .box img ");
+// for(var index in img) {
+//   img[index].addEventListener("hover",sub_show(index))
+// }
 // function show() {
 //     for(var index in img) {
 //       console.log(index);
 //       img[index].addEventListener("hover",sub_show(index))
 //     }
 // }
-function sub_show(index) {
+// function sub_show(index) {
   // show[index].style.display = "block";
-  console.log(show[index]);
-}
+  // console.log(show[index]);
+// }
 
 
 
@@ -72,4 +72,18 @@ function sub_show(index) {
 //     document.getElementById("img").src = anh[index].src;
 //   }
 // }
+const blockMore = document.querySelectorAll(".content-1 .box-5 .box .on");
 
+const imgMore = document.querySelectorAll(".content-1 .box-5 .box img");
+
+console.log(imgMore);
+
+console.log(blockMore);
+
+var showMore = (x) => {
+  blockMore[x].style.display = 'block';
+}
+
+var hiddenMore = (x) => { 
+  blockMore[x].style.display = null;
+}

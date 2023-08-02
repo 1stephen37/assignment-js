@@ -1,0 +1,24 @@
+@media (max-width: 425px) { 
+    #header .top {
+        display: none;
+    }
+
+    .nav .left-nav a:first-child {
+       display: inline-block;
+    }
+
+    .nav .left-nav a {
+        display: none;
+    }
+
+    .nav .left-nav i {
+        display: none;
+    }
+
+    #header .nav .shop {
+        display: none;
+    }
+
+    
+
+}
